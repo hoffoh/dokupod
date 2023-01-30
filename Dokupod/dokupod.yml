@@ -1,14 +1,14 @@
 version: "2.1"
 services:
   dokuwiki:
-    image: quay.io/rhn_support_rafrojas/dokupod:latest
+    image: https://quay.io/rhn_support_rafrojas/dokupod:v1.0 
     container_name: dokuwiki
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
     volumes:
-      - ~/dokupod:/config/dokuwiki/data
+      - /home/rafrojas/Documents/dokupod:/config/dokuwiki/data
     ports:
       - 8080:80
     restart: unless-stopped
