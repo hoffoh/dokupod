@@ -1,7 +1,7 @@
 version: "2.1"
 services:
   dokuwiki:
-    image: lscr.io/linuxserver/dokuwiki:latest
+    image: quay.io/rhn_support_rafrojas/dokupod:latest
     container_name: dokuwiki
     environment:
       - PUID=1000
